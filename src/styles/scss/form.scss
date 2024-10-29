@@ -1,0 +1,27 @@
+@use './variables.scss' as *;
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form-item {
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+
+    .input {
+      padding: 0.5rem;
+      margin: 0.25rem 0;
+      border: 1px solid $color-gray;
+      color: inherit !important;
+      border-radius: 0.25rem;
+    }
+    .error {
+      font-size: 0.75rem;
+      color: $color-red;
+      border-color: $color-red;
+    }
+  }
+}
