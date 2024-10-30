@@ -4,9 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/index.js', // ваш главный файл JS
+  entry: './src/js/index.js',
   output: {
-    filename: 'bundle.js', // имя выходного файла
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -24,7 +24,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // указываем путь к вашему HTML-шаблону
+      template: './src/index.html',
       filename: 'index.html',
     }),
     new CleanWebpackPlugin(),
